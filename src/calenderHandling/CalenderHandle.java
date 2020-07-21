@@ -24,7 +24,7 @@ driver.findElement(By.name("email")).sendKeys("roicianstesting1@gmail.com");
 driver.findElement(By.name("password")).sendKeys("trewq12345");
 driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 
-String date1="3-april-2020";
+String date1="16-april-2020";
 String datearr[]=date1.split("-");  //3,april,2020
 String day1=datearr[0];
 String month1=datearr[1];
@@ -83,7 +83,7 @@ if(dayvalue2.equals(day2)) {
 		 break;
 	 }}
 
-driver.quit();
+//driver.quit();
 }
 }}
  

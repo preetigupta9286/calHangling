@@ -33,6 +33,9 @@ selectDateByJS(driver, date, datevalue);
 WebElement date1=driver.findElement(By.name("last_date_of_cover"));
 String datevalue1="30-04-2020";
 selectDateByJS(driver, date1, datevalue1);
+
+driver.findElement(By.name("user_name[]")).sendKeys("preeti");
+driver.findElement(By.xpath("//div[@class='radio text-center ' and @data-value='25000']")).click();
 }
 
 //by using javaScriptExecuter

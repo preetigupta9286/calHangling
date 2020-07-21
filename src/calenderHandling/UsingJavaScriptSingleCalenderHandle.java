@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class UsingJavaScriptSingleCalenderHandle {
 
@@ -28,13 +29,14 @@ driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
 WebElement date=driver.findElement(By.xpath("//input[@name='first_date_of_cover' and @type='text']"));
 String datevalue="17-04-2020";
 selectDateByJS(driver, date, datevalue);
-	}
+}
 
 	//by using javaScriptExecuter
-	public static void selectDateByJS(WebDriver driver,WebElement element, String datevalue) {
-	JavascriptExecutor js=((JavascriptExecutor)driver);	
-	js.executeScript("arguments[0].setAttribute('value','"+datevalue+"');", element);
-	}
-	}
+public static void selectDateByJS(WebDriver driver,WebElement element, String datevalue) {
+JavascriptExecutor js=((JavascriptExecutor)driver);	
+js.executeScript("arguments[0].setAttribute('value','"+datevalue+"');", element);
+}
+	
 
-
+	
+	}
